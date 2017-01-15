@@ -6,7 +6,7 @@
 -- You can write comments in this file by starting them with two dashes, like
 -- these lines here.
 
-
+CREATE SEQUENCE user_id_seq;
 
 CREATE TABLE contestants(
   ID INT                  PRIMARY KEY NOT NULL DEFAULT nextval('user_id_seq'),
