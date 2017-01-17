@@ -73,7 +73,7 @@ def registerPlayer(name):
     """
     DB = psycopg2.connect("dbname=tournament")
     c=DB.cursor()
-    c.execute("insert into contestants (contestant, wins, losses, matches) VALUES (%s,'0','0','0')", (name,))
+    c.execute("insert into contestants (contestant, wins, losses) VALUES (%s,'0','0')", (name,))
     DB.commit()
     DB.close()
     return True
